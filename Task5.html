@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>practice</title>
+</head>
+
+<body>
+   <pre>
+      есть массив в котором числа например
+      const arr1 = [2,4,6,8,10];
+      const arr2 = [2,4,6,8,9,10];
+      переменная ответа
+      let result = false;
+      прописать логику в котором идет проверка на наличие не четных чисел
+      
+      console.log(false) в случае проверки arr1 (нет, ни одно не четного числа в массиве)
+      console.log(true) в случае проверки arr2 (да, хотя бы одно число в массиве не четное)
+    </pre>
+   <script>
+      const arr1 = [2, 4, 6, 8, 10];
+      const arr2 = [2, 4, 6, 8, 9, 10];
+      let result = false;
+
+      function even (data) {
+
+         let numnum = [];
+
+         data.forEach(function (element) {
+            if (element %2 !== 0) {
+               numnum.push(element)
+            }
+         });
+
+         if (numnum.length == 0) {
+            result = false;
+            console.log(result + " - Нечетных нет");
+            return result;
+         }
+         else {
+            result = true;
+            console.log(`${result} - Нечетные есть: ${numnum}`);
+            return result;
+         }
+         }
+     
+      alert (arr1);
+      alert (arr2);
+   </script>
+</body>
+
+</html>

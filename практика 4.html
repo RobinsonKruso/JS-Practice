@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <pre>
+        1.1 написать код который проверяет длину массивов и выводит сообщение 
+        в котором элементов больше
+        1.2 дописать вариант если массивы равны и вывести отдельное сообщение 
+        если массивы пустые
+    </pre>
+    <script>
+        //  1.1 написать код который проверяет длину массивов и выводит сообщение 
+        //     в котором элементов больше
+        //     1.2 дописать вариант если массивы равны и вывести отдельное сообщение
+        //     если массивы пустые
+
+        let array1 = [11, 22, 22];
+        let array2 = [11, 22];
+
+        if (array1.length == 0 || array2.length == 0) {
+            alert(`Один из массивов пустой \r\narray1 [${array1}]; \r\narray2 [${array2}];`);
+        }
+
+        else if (array1.length == array2.length) {
+            alert(`Массивы равны, их длина ${array1.length}\r\narray1 [${array1}]; \r\narray2 [${array2}];`);
+        }
+
+        else if (array1.length > array2.length) {
+            alert(`Массив array1 длиннее, его длина ${array1.length}\r\narray1 [${array1}]; \r\narray2 [${array2}];`);
+        }
+        else {
+            alert(`Массив array2 длиннее, его длина ${array2.length}\r\narray1 [${array1}]; \r\narray2 [${array2}];`);
+        }
+
+    </script>
+</body>
+
+</html>

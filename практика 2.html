@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        через prompt - Пользователь вводит 3 числа. 
+         Из этих чисел найти максимальное и выдать сообщение какое из наибольшее. 
+         Учесть вариант равенства чисел.
+        </pre>
+    <script>
+        // через prompt - Пользователь вводит 3 числа. 
+        //  Из этих чисел найти максимальное и выдать сообщение какое из наибольшее. 
+        //  Учесть вариант равенства чисел.
+        let value1 = +prompt('Введите первое число', 0);
+        let valeu2 = +prompt('Введите второе число', 0);
+        let valeu3 = +prompt('Введите третее число', 0);
+
+        if (value1 == valeu2 && value1 == valeu3) {
+            alert("Все числа одинаковые - " + value1);
+        }
+        else if (valeu2 >= value1 && valeu2 >= valeu3) {
+            alert("Максимальное число - " + valeu2);
+        }
+        else { alert("Максимальное число - " + valeu3) }
+    </script>
+</body>
+
+</html>

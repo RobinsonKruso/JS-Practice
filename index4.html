@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Задача 1
+
+        var arr1 = [23,45];
+        var arr2 = [44,55,667,77];
+
+        1.1 написать код который проверяет длину массивов и выводит сообщение в котором элементов больше
+        1.2 дописать вариант если массивы равны и вывести отдельное сообщение если массивы пустые -->
+
+    <script>
+        var arr1 = [23, 45];
+        var arr2 = [44, 55, 667, 77];
+        if (arr1.length == 0 || arr2.length == 0) {
+            console.log("Один из масивов пустой")
+        } else if (arr2.length > arr1.length) {
+            console.log(`Второй массив длиннее, его длинна ${arr2}`);
+        } else if (arr1.length == arr2.length) {
+            console.log("Массивы равны")
+        } else if (arr1.length > arr2.length) {
+            console.log(`Первый массив длиннее, его длинна ${arr1}`);
+        }
+    </script>
+
+</body>
+
+</html>
